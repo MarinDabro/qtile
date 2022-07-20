@@ -30,6 +30,7 @@ import socket
 import subprocess
 from typing import List  # noqa: F401
 from libqtile import layout, bar, widget, hook
+#from libqtile.layout import Floating, MonadTall, MonadWide, Max
 from libqtile.config import Click, Drag, Group, Key, Match, Screen, Rule
 from libqtile.command import lazy
 from libqtile.widget import Spacer
@@ -593,8 +594,6 @@ floating_layout = layout.Floating(float_rules=[
     Match(wm_class='Galculator'),
     Match(wm_class='archlinux-logout'),
     Match(wm_class='xfce4-terminal'),
-    Match(wm_class='"join?action=join&confno=84783303111&pwd=dHB1TVZ2cmtMYS9OdkVWUXN4MlNrQT09&confid=dXRpZD1VVElEXzBhZjJlN2QzYTZjOTRhYmU5N2RkMzVlOWMwMWE5YTljJnVzcz01NFpGVUxMSFlXZzRXcVQtRk04VllibExqdUl1N19pbFRVN3hTSmpoZFNiR0tnNmJ0OVBTeWdWMDRqSFZTQU5Rdk9Zd3Z4TXZYUFMzdndiV3pSc0hqT0dZb3E1dC5CUnMwMGdiYzhQVDhJTmFZJnRpZD0xZmMwOGYyNjMyZWQ0YzAwODQ1OWFjYTVmYzQzZjlmMg%3D%3D&browser=firefox", "join?action=join&confno=84783303111&pwd=dHB1TVZ2cmtMYS9OdkVWUXN4MlNrQT09&confid=dXRpZD1VVElEXzBhZjJlN2QzYTZjOTRhYmU5N2RkMzVlOWMwMWE5YTljJnVzcz01NFpGVUxMSFlXZzRXcVQtRk04VllibExqdUl1N19pbFRVN3hTSmpoZFNiR0tnNmJ0OVBTeWdWMDRqSFZTQU5Rdk9Zd3Z4TXZYUFMzdndiV3pSc0hqT0dZb3E1dC5CUnMwMGdiYzhQVDhJTmFZJnRpZD0xZmMwOGYyNjMyZWQ0YzAwODQ1OWFjYTVmYzQzZjlmMg%3D%3D&browser=firefox"')
-
 ],  fullscreen_border_width = 0, border_width = 0)
 auto_fullscreen = True
 
