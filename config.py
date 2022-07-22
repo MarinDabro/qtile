@@ -62,7 +62,7 @@ keys = [
      #Key([mod], 'f', lazy.spawn('nemo')),
      Key([mod], 'i', lazy.spawn('alacritty -e btop')),
      Key([mod], 'c', lazy.spawn('alacritty -e nvim')),
-     Key([mod], 'd', lazy.spawn('alacritty --working-directory Desktop/dci/javascript/')),
+     Key([mod], 'd', lazy.spawn('alacritty --working-directory Desktop/dci/dom/')),
      Key([mod, 'shift'], 'c', lazy.spawn('alacritty -e nvim .config/qtile/config.py')),
      Key([mod], 'u', lazy.spawn('slack')),
      Key([mod], 'p', lazy.spawn('xfce4-screenshooter')),
@@ -236,7 +236,7 @@ for i in groups:
 def init_layout_theme():
     return {"margin":7,
             "border_width":2,
-            "border_focus": "#BF616A",
+            "border_focus": "#3FBF96",
             "border_normal": "#4c566a",
             "border_radius": 3
             }
@@ -293,7 +293,7 @@ def init_widgets_list():
                         padding_x = 3.5,
                         borderwidth = 0,
                         disable_drag = True,
-                        active = colors[9],
+                        active = '#3FBF96',
                         inactive = colors[5],
                         rounded = False,
                         highlight_method = "text",
@@ -304,19 +304,19 @@ def init_widgets_list():
                widget.Sep(
                         linewidth = 2,
                         padding = 13,
-                        foreground = colors[9],
+                        foreground = colors[3],
                         background = colors[1]
                         ),
                widget.CurrentLayout(
                         font = "Noto Sans Bold",
                         fontsize = 14,
-                        foreground = colors[5],
+                        foreground = '#3FBF96',
                         background = colors[1]
                         ),
                widget.Sep(
                         linewidth = 2,
                         padding = 13,
-                        foreground = colors[9],
+                        foreground = colors[3],
                         background = colors[1]
                         ),
                widget.WindowName(font="Noto Sans Bold",
@@ -436,8 +436,8 @@ def init_widgets_list():
                #          ),
                widget.TextBox(
                         font="FontAwesome",
-                        text="  ",
-                        foreground=colors[3],
+                        text="   ",
+                        foreground='#3FBF96',
                         background=colors[1],
                         padding = 0,
                         fontsize=16
@@ -447,7 +447,7 @@ def init_widgets_list():
                         background = colors[1],
                         fontsize = 17,
                         font= "SauceCodePro Nerd Font Mono Bold",
-                        format="%Y.%m.%d %H:%M"
+                        format="%d.%m - %H:%M"
                         ),
                # widget.Sep(
                #          linewidth = 1,
