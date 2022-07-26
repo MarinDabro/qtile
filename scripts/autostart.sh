@@ -28,7 +28,7 @@ if [ $keybLayout = "be" ]; then
 fi
 
 #autostart ArcoLinux Welcome App
-run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
+#run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &
