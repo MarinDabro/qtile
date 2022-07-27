@@ -66,10 +66,10 @@ keys = [
      Key([mod, 'shift'], 'c', lazy.spawn('alacritty -e nvim .config/qtile/config.py')),
      Key([mod], 'u', lazy.spawn('slack')),
      Key([mod], 'p', lazy.spawn('xfce4-screenshooter')),
-     Key([mod], 'o', lazy.spawn(home + '/bash/opacityToggle.sh')),
-     Key([mod, 'shift'], 'o', lazy.spawn(home + '/bash/opacityAlacritty.sh')),
-     Key([mod], 'f', lazy.spawn(home + '/bash/ranger.sh')),
-     Key([mod, 'shift'], 'f', lazy.spawn(home + '/bash/sudoranger.sh')),
+     Key([mod], 'o', lazy.spawn(home + '/shells/scripts/opacityToggle.sh')),
+     Key([mod, 'shift'], 'o', lazy.spawn(home + '/shells/scripts/opacityAlacritty.sh')),
+     Key([mod], 'f', lazy.spawn(home + '/shells/scripts/ranger.sh')),
+     Key([mod, 'shift'], 'f', lazy.spawn(home + '/shells/scripts/sudoranger.sh')),
 
 # Most of our keybindings are in sxhkd file - except these
 
