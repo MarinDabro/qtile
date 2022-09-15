@@ -59,6 +59,8 @@ keys = [
      Key([mod], 'x', lazy.spawn('alacritty')),
      Key([mod], 'b', lazy.spawn('librewolf')),
      Key([mod], 'y', lazy.spawn('qutebrowser')),
+     Key([mod], 'g', lazy.spawn('steam')),
+     Key([mod, 'shift'], 'u', lazy.spawn('signal-desktop')),
      #Key([mod], 'f', lazy.spawn('nemo')),
      Key([mod], 'i', lazy.spawn('alacritty -e btop')),
      Key([mod], 'c', lazy.spawn('alacritty -e nvim')),
