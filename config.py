@@ -57,15 +57,16 @@ def window_to_next_group(qtile):
 
 keys = [
      Key([mod], 'x', lazy.spawn('alacritty')),
+     Key([mod], 'n', lazy.spawn('alacritty -e ~/shells/scripts/bbFrontend.sh')),
+     Key([mod, 'shift'], 'j', lazy.spawn('idea')),
      Key([mod], 'b', lazy.spawn('librewolf')),
      Key([mod], 'y', lazy.spawn('qutebrowser')),
      Key([mod], 'g', lazy.spawn('steam')),
      Key([mod], 'd', lazy.spawn('discord')),
      Key([mod, 'shift'], 'u', lazy.spawn('signal-desktop')),
-     #Key([mod], 'f', lazy.spawn('nemo')),
      Key([mod], 'i', lazy.spawn('alacritty -e btop')),
      Key([mod], 'c', lazy.spawn('alacritty -e nvim')),
-     Key([mod, 'shift'], 'c', lazy.spawn('alacritty -e nvim .config/qtile/config.py')),
+     Key([mod, 'shift'], 'c', lazy.spawn('alacritty -e vim .config/qtile/config.py')),
      Key([mod], 'u', lazy.spawn('slack')),
      Key([mod], 'p', lazy.spawn('xfce4-screenshooter')),
      Key([mod], 'o', lazy.spawn(home + '/shells/scripts/opacityToggle.sh')),
